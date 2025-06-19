@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VideoMaker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="fileSection">
+      <h1>動画を選択してください</h1>
+      <input type="file" id="fileInput" accept="video/*" />
+    </div>
+
+    <div id="playSection" style="display: none;">
+      <button id="playButton">▶ 再生する</button>
+    </div>
+
+    <section id="videoMemoSection">
+      <section id="videoSection">
+        <video id="videoPlayer" controls style="display: none;"></video>
+
+        <div id="controlButtons" style="display: none;">
+          <button id="backward10Btn">⏪ 10</button>
+          <button id="backward1Btn">⏪ 1</button>
+          <button id="forward1Btn">1 ⏩</button>
+          <button id="forward10Btn">10 ⏩</button>
+          <button id="addTimeMemoBtn">📌 現在の時間を記録</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="memoSection" style="display: none;">
+        <div id="memo">
+          <h3>メモファイルを選択してください</h3>
+          <input type="file" id="memoInput" accept=".txt" />
+          <div id="memoDisplay"></div>
+        </div>
+        <button id="saveMemoBtn">💾 メモを保存</button>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

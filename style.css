@@ -1,0 +1,102 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+input[type="file"], button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+video {
+  width: 100%;
+}
+#videoSection {
+  width: 10%;
+  margin-top: 30px;
+}
+
+#controlButtons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#videoSection {
+  width: 60%;
+}
+
+#memoSection {
+  width: 40%;
+}
+
+#videoMemoSection {
+  display: flex;
+}
+
+#memoDisplay {
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: left;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+  height: 400px;
+  overflow: scroll;
+}
+
+.memo-row {
+  display: flex;
+  gap: 8px;
+  margin: 5px 0;
+  align-items: center;
+}
+
+.memo-time {
+  flex: 0.6;
+  width: 10px;
+  height: 32px;
+}
+
+.memo-text {
+  flex: 6;
+  width: 100%;
+  height: 32px;
+  font-size: 16px;
+  resize: none;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.memo-row input {
+  line-height: 20px;
+  height: 28px;
+  padding: 2px;
+}
+
+.time-memo-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.memoBtn {
+  padding: 0;
+  margin: 0;
+  height: 28px;
+  width: 28px;
+  font-size: 12px;
+}
+
+.deleteBtn {
+  font-size: 20px;
+}
